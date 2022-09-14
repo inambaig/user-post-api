@@ -8,7 +8,6 @@ module Api
   
         def show
           @post = Post.find(params[:id])
-          render json: {status: 'SUCCESS', message: 'Loaded posts', data:@post}, status: :ok
         end
   
         def create
